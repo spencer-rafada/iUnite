@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct iUniteApp: App {
+    @State private var vm = EventsViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EventsView()
+                .environmentObject(vm)
         }
     }
 }
