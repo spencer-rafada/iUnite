@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02BF0982915E344008C6666 /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BF0972915E344008C6666 /* EventPreviewView.swift */; };
+		A02BF09A2915F53B008C6666 /* EventMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BF0992915F53B008C6666 /* EventMapAnnotationView.swift */; };
 		A03607502914CC12006FAB6E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036074F2914CC12006FAB6E /* Event.swift */; };
 		A03607522914CE09006FAB6E /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03607512914CE09006FAB6E /* EventsViewModel.swift */; };
 		A03607542914CE43006FAB6E /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03607532914CE43006FAB6E /* EventsView.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A02BF0972915E344008C6666 /* EventPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPreviewView.swift; sourceTree = "<group>"; };
+		A02BF0992915F53B008C6666 /* EventMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapAnnotationView.swift; sourceTree = "<group>"; };
 		A036074F2914CC12006FAB6E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A03607512914CE09006FAB6E /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A03607532914CE43006FAB6E /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				A03607532914CE43006FAB6E /* EventsView.swift */,
 				A03607572914D7ED006FAB6E /* EventsListView.swift */,
+				A02BF0972915E344008C6666 /* EventPreviewView.swift */,
+				A02BF0992915F53B008C6666 /* EventMapAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +191,8 @@
 				A03607582914D7ED006FAB6E /* EventsListView.swift in Sources */,
 				A03607522914CE09006FAB6E /* EventsViewModel.swift in Sources */,
 				A03607502914CC12006FAB6E /* Event.swift in Sources */,
+				A02BF0982915E344008C6666 /* EventPreviewView.swift in Sources */,
+				A02BF09A2915F53B008C6666 /* EventMapAnnotationView.swift in Sources */,
 				A03607562914CE99006FAB6E /* EventsDataService.swift in Sources */,
 				A0D9B1562910B66100A225FB /* iUniteApp.swift in Sources */,
 			);

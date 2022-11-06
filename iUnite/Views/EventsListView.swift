@@ -37,7 +37,7 @@ extension EventsListView {
             VStack (alignment: .leading) {
                 Text(event.eventName)
                     .font(.headline)
-                Text(event.buildingName)
+                Text(event.buildingName + " - " + event.hostUser)
                     .font(.subheadline)
             }
         }

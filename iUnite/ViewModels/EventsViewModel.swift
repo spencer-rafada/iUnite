@@ -53,4 +53,29 @@ class EventsViewModel: ObservableObject {
             showEventsList = false
         }
     }
+    
+    func nextButtonPressed() {
+        // Get the current index
+        /* let currentIndex = events.firstIndex { event in
+            return event == eventLocation
+        } */
+        guard let currentIndex = events.firstIndex(where: {$0 == eventLocation}) else {
+            print("Could not find current index! Should never happen")
+            return
+        }
+        
+        // Check if current index is valid
+        let nextIndex = currentIndex + 1
+        guard events.indices.contains(nextIndex) else {
+            // Next index is not valid
+            // Restart from 0
+            guard let firstIndex = events.first else {return}
+            showNextEvent(event: firstIndex)
+            return
+        }
+        
+        // If next index is valid
+        let nextEvent = events[nextIndex]
+        showNextEvent(event: nextEvent)
+    }
 }

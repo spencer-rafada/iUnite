@@ -12,12 +12,13 @@ struct EventsView: View {
     @EnvironmentObject private var vm: EventsViewModel
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.eventRegion)
+            mapLayer
                 .ignoresSafeArea()
             VStack (spacing: 0) {
                 header
                     .padding()
                 Spacer()
+                eventsPreview
             }
         }
     }
@@ -53,5 +54,35 @@ extension EventsView {
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
+    }
+    
+    private var mapLayer: some View {
+        Map(coordinateRegion: $vm.eventRegion,
+            annotationItems: vm.events,
+            annotationContent: { event in
+            MapAnnotation(coordinate: event.coordinates) {
+                EventMapAnnotationView()
+                    .scaleEffect(vm.eventLocation == event ? 1 : 0.6)
+                    .shadow(radius: 10)
+                    .onTapGesture {
+                        vm.showNextEvent(event: event)
+                    }
+            }
+        })
+    }
+    
+    private var eventsPreview: some View {
+        ZStack {
+            ForEach(vm.events) { event in
+                if vm.eventLocation == event {
+                    EventPreviewView(event: event)
+                        .shadow(color: Color.black.opacity(0.3), radius: 20)
+                        .padding()
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .trailing),
+                            removal: .move(edge: .leading)))
+                }
+            }
+        }
     }
 }
