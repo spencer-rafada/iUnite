@@ -14,6 +14,7 @@
 		A03607542914CE43006FAB6E /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03607532914CE43006FAB6E /* EventsView.swift */; };
 		A03607562914CE99006FAB6E /* EventsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03607552914CE99006FAB6E /* EventsDataService.swift */; };
 		A03607582914D7ED006FAB6E /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03607572914D7ED006FAB6E /* EventsListView.swift */; };
+		A0A297D6291A08B800C09AB5 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A297D5291A08B800C09AB5 /* EventDetailView.swift */; };
 		A0D9B1562910B66100A225FB /* iUniteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B1552910B66100A225FB /* iUniteApp.swift */; };
 		A0D9B15A2910B66500A225FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B1592910B66500A225FB /* Assets.xcassets */; };
 		A0D9B15D2910B66500A225FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B15C2910B66500A225FB /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		A03607532914CE43006FAB6E /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		A03607552914CE99006FAB6E /* EventsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataService.swift; sourceTree = "<group>"; };
 		A03607572914D7ED006FAB6E /* EventsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		A0A297D5291A08B800C09AB5 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		A0D9B1522910B66100A225FB /* iUnite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUnite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D9B1552910B66100A225FB /* iUniteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iUniteApp.swift; sourceTree = "<group>"; };
 		A0D9B1592910B66500A225FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A03607572914D7ED006FAB6E /* EventsListView.swift */,
 				A02BF0972915E344008C6666 /* EventPreviewView.swift */,
 				A02BF0992915F53B008C6666 /* EventMapAnnotationView.swift */,
+				A0A297D5291A08B800C09AB5 /* EventDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				A03607522914CE09006FAB6E /* EventsViewModel.swift in Sources */,
 				A03607502914CC12006FAB6E /* Event.swift in Sources */,
 				A02BF0982915E344008C6666 /* EventPreviewView.swift in Sources */,
+				A0A297D6291A08B800C09AB5 /* EventDetailView.swift in Sources */,
 				A02BF09A2915F53B008C6666 /* EventMapAnnotationView.swift in Sources */,
 				A03607562914CE99006FAB6E /* EventsDataService.swift in Sources */,
 				A0D9B1562910B66100A225FB /* iUniteApp.swift in Sources */,

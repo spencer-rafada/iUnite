@@ -21,6 +21,9 @@ struct EventsView: View {
                 eventsPreview
             }
         }
+        .sheet(item: $vm.sheetEvent, onDismiss: nil) { event in
+            EventDetailView(event: event)
+        }
     }
 }
 

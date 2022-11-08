@@ -28,7 +28,7 @@ class EventsDataService {
         Event(eventName: "Basketball with Friends",
               buildingName: "I-Center",
               coordinates: CLLocationCoordinate2D(latitude: 43.8183, longitude: -111.7849),
-              imageNames: ["i-center-1"],
+              imageNames: ["i-center-1", "walmart-1"],
               description: "Need some friends for pickup later!",
               hostUser: "Michael R",
               members: ["Mhel", "Spencer", "Jarom"]),

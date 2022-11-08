@@ -27,6 +27,9 @@ class EventsViewModel: ObservableObject {
     // Show list of locations
     @Published var showEventsList: Bool = false
     
+    // Show event details via sheet
+    @Published var sheetEvent: Event? = nil
+    
     init() {
         let events = EventsDataService.events
         self.events = events
